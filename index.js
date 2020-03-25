@@ -7,17 +7,6 @@ const {
   isParseEnd
 } = require('./libs/helpers');
 
-// const md = `
-// <!-- test -->
-// # Link 1
-
-// ## Link 1.1
-// *description*
-// - [link](https://link-1) - A description link 1 [site](https://site.ru)
-// - [link](https://link-2) - A description link 2
-// `
-// console.dir({tree: lexer(md)})
-
 const awesomeReadmeToData = filePath => new Promise(resolve => {
   const processing = (err, md) => {
     if (err) throw err;
