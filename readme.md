@@ -1,4 +1,4 @@
-# awesome-readme-to-data
+# <img valign="text-bottom" height="49" src="assets/logo.svg" align="right"> awesome-readme-to-data
 > Transform awesome readme to data
 
 ## Why?
