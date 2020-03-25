@@ -1,0 +1,32 @@
+{
+  "name": "awesome-readme-to-data",
+  "version": "0.0.0",
+  "description": "Transform awesome readme to data",
+  "main": "index.js",
+  "dependencies": {
+    "marked": "^0.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-angular": "^8.2.0",
+    "ava": "^3.5.1",
+    "conventional-changelog-cli": "^2.0.28",
+    "coveralls": "^3.0.7",
+    "husky": "^4.2.3",
+    "nyc": "^15.0.0",
+    "xo": "^0.28.0"
+  },
+  "scripts": {
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "xo && nyc ava"
+  },
+  "keywords": [
+    "awesome",
+    "transform",
+    "readme",
+    "data"
+  ],
+  "author": "scrum",
+  "license": "MIT"
+}
