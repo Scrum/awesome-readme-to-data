@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "Transform awesome readme to data",
   "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
     "marked": "^0.8.2"
   },
