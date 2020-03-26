@@ -1,11 +1,19 @@
 class Link {
   constructor({text}) {
-    const [description, link] = text.match(/^(\[.+?]\(.+?\))?(.+?)$/).reverse();
-    const [path, name] = link.match(/^\[(.+?)]\((.+?)\)$/).reverse();
+    let [description, link] = text.match(/^(\[.+?]\(.+?\))?(.+?)$/).reverse();
+    if (link === undefined && /^(\[.+?]\(.+?\))/.test(description)) {
+      link = description;
+    }
 
-    this.name = name;
-    this.path = path;
-    this.description = description;
+    if (link !== undefined) {
+      const [path, name] = link.match(/^\[(.+?)]\((.+?)\)$/).reverse();
+      this.name = name;
+      this.path = path;
+    }
+
+    if (description !== link) {
+      this.description = description;
+    }
   }
 }
 
