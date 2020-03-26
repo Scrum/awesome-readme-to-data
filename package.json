@@ -1,6 +1,6 @@
 {
   "name": "awesome-readme-to-data",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Transform awesome readme to data",
   "main": "index.js",
   "dependencies": {
@@ -17,7 +17,7 @@
     "xo": "^0.28.0"
   },
   "scripts": {
-    "version": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
+    "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "xo && nyc ava"
   },
