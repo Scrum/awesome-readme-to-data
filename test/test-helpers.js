@@ -57,3 +57,43 @@ test('create node link with description', t => {
   t.is(value.constructor.name, 'Link');
   t.deepEqual({...value}, expectedNode);
 });
+
+test('create node link without description', t => {
+  const node = {
+    type: 'text',
+    text: '[link](https://link-1)'
+  };
+  const expectedNode = {
+    name: 'link',
+    path: 'https://link-1'
+  };
+  const value = new Link(node);
+  t.is(value.constructor.name, 'Link');
+  t.deepEqual({...value}, expectedNode);
+});
+
+test('create node link without link', t => {
+  const node = {
+    type: 'text',
+    text: 'link'
+  };
+  const expectedNode = {
+    description: 'link'
+  };
+  const value = new Link(node);
+  t.is(value.constructor.name, 'Link');
+  t.deepEqual({...value}, expectedNode);
+});
+
+test('create node link with incorrect start link', t => {
+  const node = {
+    type: 'text',
+    text: 'link [test](https://test.ru) sadasd asda'
+  };
+  const expectedNode = {
+    description: 'link [test](https://test.ru) sadasd asda'
+  };
+  const value = new Link(node);
+  t.is(value.constructor.name, 'Link');
+  t.deepEqual({...value}, expectedNode);
+});
