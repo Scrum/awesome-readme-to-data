@@ -1,5 +1,3 @@
-const path = require('path');
-const fs = require('fs');
 const {lexer} = require('marked');
 const createTree = require('./libs/tree');
 const {
@@ -7,10 +5,7 @@ const {
   isParseEnd
 } = require('./libs/helpers');
 
-const awesomeReadmeToData = filePath => new Promise(resolve => {
-  const processing = (err, md) => {
-    if (err) throw err;
-
+const awesomeReadmeToData = md => new Promise(resolve => {
     let parse = false;
     const nodes = lexer(md).filter(node => {
       if (isParseStart(node) || isParseEnd(node)) {
@@ -22,9 +17,6 @@ const awesomeReadmeToData = filePath => new Promise(resolve => {
     });
 
     resolve(createTree(nodes));
-  }
-
-  fs.readFile(path.resolve(filePath), 'utf8', processing);
 });
 
 module.exports = awesomeReadmeToData;

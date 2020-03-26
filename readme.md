@@ -16,8 +16,21 @@ $ npm install awesome-readme-to-data
 
 ```js
 const awesomeReadmeToData = require('awesome-readme-to-data');
+const md = `
+# awesome you project
+<!-- md-parser-start -->
+## Level 1
 
-awesomeReadmeToData('path/to/config/file', options)
+### Level 1.1
+
+*Description leve 1.1*
+
+- [text link 1](https://url-link-1) - A description link 1
+- [text link 2](https://url-link-2) - A description link 2
+<!-- md-parser-end -->
+`;
+
+awesomeReadmeToData(md, options)
   .then(data => {
     console.log(data);
   });
