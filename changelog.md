@@ -1,7 +1,15 @@
+## <small>0.0.2 (2020-03-26)</small>
+
+* ci: drop support old node ([0597906](https://github.com/Scrum/awesome-readme-to-data/commit/0597906))
+
+
+
 ## <small>0.0.1 (2020-03-26)</small>
 
-* build: update version script ([02a801c](https://github.com/Scrum/awesome-readme-to-data/commit/02a801c))
+* 0.0.1 ([3ecaae6](https://github.com/Scrum/awesome-readme-to-data/commit/3ecaae6))
 * 0.0.1 ([d8cae72](https://github.com/Scrum/awesome-readme-to-data/commit/d8cae72))
+* build: update changelog ([65c57f6](https://github.com/Scrum/awesome-readme-to-data/commit/65c57f6))
+* build: update version script ([02a801c](https://github.com/Scrum/awesome-readme-to-data/commit/02a801c))
 * docs: add badges ([96c636e](https://github.com/Scrum/awesome-readme-to-data/commit/96c636e))
 * perf: add logo in readme ([dbff039](https://github.com/Scrum/awesome-readme-to-data/commit/dbff039))
 * perf: change file path to getter source ([6c5c6c8](https://github.com/Scrum/awesome-readme-to-data/commit/6c5c6c8))
