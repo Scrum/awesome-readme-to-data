@@ -1,5 +1,15 @@
+## <small>0.0.3 (2020-03-26)</small>
+
+* fix: parse incorrect link ([b1dc694](https://github.com/Scrum/awesome-readme-to-data/commit/b1dc694))
+* test: incorrect link ([9fccb6c](https://github.com/Scrum/awesome-readme-to-data/commit/9fccb6c))
+* docs: update for label ([d1b6c18](https://github.com/Scrum/awesome-readme-to-data/commit/d1b6c18))
+
+
+
 ## <small>0.0.2 (2020-03-26)</small>
 
+* 0.0.2 ([82d1769](https://github.com/Scrum/awesome-readme-to-data/commit/82d1769))
+* build: update changelog ([8ae0770](https://github.com/Scrum/awesome-readme-to-data/commit/8ae0770))
 * ci: drop support old node ([0597906](https://github.com/Scrum/awesome-readme-to-data/commit/0597906))
 
 
