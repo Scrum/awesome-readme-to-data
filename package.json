@@ -1,6 +1,6 @@
 {
   "name": "awesome-readme-to-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Transform awesome readme to data",
   "main": "index.js",
   "engines": {
@@ -10,18 +10,16 @@
     "marked": "^0.8.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-angular": "^8.2.0",
-    "ava": "^3.5.1",
-    "conventional-changelog-cli": "^2.0.28",
-    "coveralls": "^3.0.7",
-    "husky": "^4.2.3",
-    "nyc": "^15.0.0",
-    "xo": "^0.28.0"
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-angular": "^9.0.1",
+    "ava": "^3.9.0",
+    "conventional-changelog-cli": "^2.0.35",
+    "husky": "^4.2.5",
+    "nyc": "^15.1.0",
+    "xo": "^0.32.0"
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "xo && nyc ava"
   },
   "keywords": [
