@@ -1,5 +1,16 @@
+## <small>0.0.4 (2020-06-29)</small>
+
+* ci: lost nycrc ([dc87245](https://github.com/Scrum/awesome-readme-to-data/commit/dc87245))
+* ci: migrate to github action ([061f401](https://github.com/Scrum/awesome-readme-to-data/commit/061f401))
+* style: after lint ([cf7547f](https://github.com/Scrum/awesome-readme-to-data/commit/cf7547f))
+* build: update dep dev ([a75a7c4](https://github.com/Scrum/awesome-readme-to-data/commit/a75a7c4))
+
+
+
 ## <small>0.0.3 (2020-03-26)</small>
 
+* 0.0.3 ([d4bb3af](https://github.com/Scrum/awesome-readme-to-data/commit/d4bb3af))
+* build: update changelog ([395bf82](https://github.com/Scrum/awesome-readme-to-data/commit/395bf82))
 * fix: parse incorrect link ([b1dc694](https://github.com/Scrum/awesome-readme-to-data/commit/b1dc694))
 * test: incorrect link ([9fccb6c](https://github.com/Scrum/awesome-readme-to-data/commit/9fccb6c))
 * docs: update for label ([d1b6c18](https://github.com/Scrum/awesome-readme-to-data/commit/d1b6c18))
