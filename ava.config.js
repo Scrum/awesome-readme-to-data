@@ -1,3 +1,5 @@
-export default {
+const config = {
   verbose: true
 };
+
+export default config;
