@@ -10,13 +10,13 @@
     "marked": "^0.8.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
-    "@commitlint/config-angular": "^8.2.0",
-    "ava": "^3.5.1",
-    "conventional-changelog-cli": "^2.0.28",
-    "husky": "^4.2.3",
-    "nyc": "^15.0.0",
-    "xo": "^0.28.0"
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-angular": "^9.0.1",
+    "ava": "^3.9.0",
+    "conventional-changelog-cli": "^2.0.35",
+    "husky": "^4.2.5",
+    "nyc": "^15.1.0",
+    "xo": "^0.32.0"
   },
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md && git commit -m \"build: update changelog\"",
