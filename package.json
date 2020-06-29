@@ -1,6 +1,6 @@
 {
   "name": "awesome-readme-to-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Transform awesome readme to data",
   "main": "index.js",
   "engines": {
